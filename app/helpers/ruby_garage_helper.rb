@@ -1,0 +1,2 @@
+module RubyGarageHelper
+end
