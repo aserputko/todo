@@ -1,15 +1,12 @@
 class RubyGarage.Views.RubyGaragesIndex extends Backbone.View
+  tagName: 'div'
+  className: 'container'
 
   template: JST['todo_lists/index']
 
-  initialize: (options) ->
-    @projects = options.projects
-    @tasks 		= options.tasks
-
-    @projects.on('reset', @render, this)
-    @tasks.on('reset', @render, this)
+  initialize:  ->
+    @collection.on('reset', @render, this)
 
   render: ->
-    $(@el).html(@template())
-    alert "test"
-    this
+    $(@el).html(@template(todoLists : @collection.models))
+    this    

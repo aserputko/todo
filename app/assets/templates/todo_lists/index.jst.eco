@@ -1,1 +1,10 @@
-Hi All!!!
+<% for todoList in @todoLists: %>
+	<div>
+		<h3><%= todoList.getProjectName() %></h3>
+		<ul>
+			<% for task in todoList.getTasks(): %>
+				<li><%= task.getName() %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
