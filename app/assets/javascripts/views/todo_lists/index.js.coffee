@@ -1,6 +1,5 @@
 class RubyGarage.Views.RubyGaragesIndex extends Backbone.View
   tagName: 'div'
-  className: 'container'
 
   template: JST['todo_lists/index']
 

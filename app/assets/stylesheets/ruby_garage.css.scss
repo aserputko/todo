@@ -1,3 +1,136 @@
 // Place all the styles related to the RubyGarage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background: #EEE;
+}
+
+#ruby_garage {
+
+	margin-top: 30px;
+
+	h2.title {
+		color: #333;
+	}
+
+	h4.title {
+		color: #999;
+		margin-bottom: 30px;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+	.project {
+		color: #FFF;
+		display: block;
+		text-align: left;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		cursor: default;
+
+		.options {
+			float: right;
+		}
+
+		.icon-pencil {
+			border-right: 1px solid #FFF;
+			padding-right: 5px;
+		}
+
+		.icon-trash, .icon-pencil {
+			cursor: pointer;
+		}
+	}
+
+	.add_task {
+		padding: 7px;
+		display: block;
+		background-color: #f5f5f5;
+	  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+	  background-repeat: repeat-x;
+	  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  border: 1px solid #cccccc;
+	  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+	  .control-group, .form-horizontal {
+	  	margin-bottom: 0;
+	  }
+
+		.control-label {
+			width: 20px;
+			font-weight: bold;
+			font-size: 35px;
+			color: #51a351;
+		}
+
+		.controls {
+			margin-left: 35px;
+
+			.btn {
+				padding: 4px 20px;
+			}
+		}
+	}
+
+	.tasks {
+		input {
+			margin-left: -7px;
+			left: 50%;
+			position: relative;
+		}
+
+		.options {
+			margin: 0;
+			padding: 0;
+
+			padding-left: 20px;
+
+			.line {
+				border-right: 1px solid #000;
+			}
+
+			.icon-pencil {
+				cursor: pointer;
+				margin-left:3px;
+			}
+
+			.icon-trash {
+				cursor: pointer;
+				margin-left: 3px;
+			}
+
+			.chevron {
+				width: 14px;
+				display: inline-block;
+				height: 15px;
+
+				.icon-chevron-up {
+					margin-top: -4px;
+					cursor: pointer;
+				}
+				.icon-chevron-down {
+					margin-top: -10px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	#add_todo_list {
+		position: relative;
+		left: 50%;
+		margin-left: -70px;
+	}
+
+}

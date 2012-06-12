@@ -4,7 +4,7 @@ window.RubyGarage =
   Views: {}
   Routers: {}
   init: ->
-  	new RubyGarage.Routers.TodoLists($('#container'))
+  	new RubyGarage.Routers.TodoLists($('#todo_lists'))
 
 $(document).ready ->
   RubyGarage.init()
