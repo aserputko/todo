@@ -1,0 +1,16 @@
+<tr>
+	<td class="span1"><input type="checkbox" <% if @task.status : %>checked> <% end %></td>
+	<td class="span7"><%= @task.name %></td>
+	<td class="span2">
+		<div class="options">
+			<div class="chevron">
+				<div class="icon-chevron-up"></div>
+				<div class="icon-chevron-down"></div>
+			</div>
+			<span class="line"></span>
+			<span class="icon-pencil"></span>
+			<span class="line"></span>
+			<span class="icon-trash"></span>
+		</div>
+	</td>
+</tr>

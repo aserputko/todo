@@ -23,6 +23,8 @@
 				</div>
 			</form>
 		</div>
+		<table class=" tasks table table-striped table-bordered table-condensed">
+		</table>
 	</div>
 </div>
 <% end %>
