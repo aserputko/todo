@@ -5,7 +5,5 @@ RubyGarage::Application.routes.draw do
   scope "api" do
     resources :projects
     resources :tasks
-
-    resources :new_way
   end
 end
