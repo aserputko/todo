@@ -1,4 +1,6 @@
 class RubyGarage.Views.Index extends Backbone.View
+  tagName : 'div'
+  className : 'row'
 
   index_template: JST['ruby_garages/index']
   new_project_template: JST['ruby_garages/new_project']
@@ -23,7 +25,7 @@ class RubyGarage.Views.Index extends Backbone.View
 
   events: ->
   	'click #add_todo_list' : 'clickOnAddTodoListButton',
-  	'click #add_project' : 'createProgect'
+  	'click #add_project'   : 'createProgect'
 
   clickOnAddTodoListButton: ->
   	$('#new_project').html(@new_project_template({}))

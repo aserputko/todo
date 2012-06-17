@@ -13,14 +13,14 @@ class RubyGarage.Views.Project extends Backbone.View
   	this
 
   events:
-  	'click .icon-pencil' : 'edit',
-  	'click .icon-trash'  : 'destroy',
-  	'click .icon-ok'     : 'save',
-  	'click button'       : 'addTask'
+    'click .project .icon-pencil' : 'edit',
+    'click .project .icon-trash'  : 'destroy',
+    'click .project .icon-ok'     : 'save',
+    'click .add_task button'      : 'addTask'
 
   appendTasks: (task) ->
-  	view = new RubyGarage.Views.Task(model : task)
-  	@$('.tasks').append(view.render().el)
+    view = new RubyGarage.Views.Task(model : task)
+    @$('.tasks').append(view.render().el)
 
   edit: ->
   	@model.set({edit : true})
@@ -35,6 +35,6 @@ class RubyGarage.Views.Project extends Backbone.View
   	@model.save()
 
   addTask: ->
-  	name = @$('input').val()
-  	@collection.create({name : name, status: false, project_id : @model.id})
+    name = @$('.add_task input').val()
+    @collection.create({name : name, status: false, project_id : @model.id})
 
