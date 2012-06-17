@@ -1,7 +1,6 @@
 class RubyGarage.Models.Task extends Backbone.Model
 	
-	getName: ->
-		@.get('name')
-
-	getStatus: ->
-		@.get('status')
+	defaults: 
+		name: null,
+		status: false,
+		project_id: null

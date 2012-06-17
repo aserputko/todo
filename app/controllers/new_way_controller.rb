@@ -3,12 +3,12 @@ class NewWayController < ApplicationController
 
   def index
   	@projects = Project.all
-    respond_with @projects.map { |project| {:project => project, :tasks => project.tasks} }
+    respond_with @projects.map { |project| project.tasks }
   end
 
   def show
   	@project = Project.find(params[:id])
-  	respond_with [{:project => @project, :tasks => @project.tasks}]
+  	respond_with @project.tasks
   end	
 
   # TODO: need change POST, PUT and DELETE

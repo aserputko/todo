@@ -1,0 +1,28 @@
+<% if @project.name: %>
+<div class="row">
+	<div class="span8 offset2">
+		<div class="project btn btn-primary btn-large">
+			<span class="icon-calendar"></span>
+			<% if @project.edit: %><input class="projects_input span6" type="text" value="<%= @project.name %>"><% end %>
+			<% if !@project.edit: %><span class="project_name"><%= @project.name %></span><% end %>
+			<div class="options">
+				<% if !@project.edit: %><span class="icon-pencil icon-white"></span><% end %>
+				<% if @project.edit: %><span class="icon-ok icon-white"></span><% end %>
+				<span class="icon-trash icon-white"></span>
+			</div>
+		</div>
+		<div class="add_task">
+			<form class="form-horizontal">
+				<div class="control-group">
+					<label class="control-label">+</label>
+					<div class="controls">
+						<div class="input-append">
+							<input class="span6" type="text" placeholder="Start typing here to create a task"><button class="btn btn-success" type="button">Add Task</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<% end %>
