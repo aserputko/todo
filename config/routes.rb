@@ -6,7 +6,4 @@ RubyGarage::Application.routes.draw do
     resources :projects
     resources :tasks
   end
-
-  resources :projects
-  resources :tasks
 end
