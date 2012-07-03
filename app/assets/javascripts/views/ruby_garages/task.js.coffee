@@ -15,8 +15,8 @@ class RubyGarage.Views.Task extends Backbone.View
     'click .tasks .icon-trash'        : 'destroy',
     'click .tasks .icon-pencil'       : 'edit',
     'click .tasks .icon-ok'           : 'save',
-    'click .tasks .icon-chevron-up'   : 'notImplementedYet',
-    'click .tasks .icon-chevron-down' : 'notImplementedYet'
+    'click .tasks .icon-chevron-up'   : 'moveUp',
+    'click .tasks .icon-chevron-down' : 'moveDown'
 
   changeStatus: ->
     @model.changeStatus(); 
@@ -34,7 +34,10 @@ class RubyGarage.Views.Task extends Backbone.View
     @model.set({name : name, edit : false})
     @model.save()
 
-  notImplementedYet: ->
-    alert "This functionality is not implemented yet! :("
+  moveUp: ->
+    @.collection.each(@.collection.up, this)
+
+  moveDown: ->
+    @.collection.each(@.collection.down, this)
 
   

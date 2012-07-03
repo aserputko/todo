@@ -5,3 +5,4 @@
 <div id="new_project"></div>
 
 <div id="add_todo_list" class="span2 btn btn-primary btn-large">Add TODO list</div>
+<div id="footer"> @ Ruby Garage </div>

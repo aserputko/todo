@@ -7,3 +7,9 @@ class RubyGarage.Models.Task extends Backbone.Model
 
 	changeStatus: ->
 		@.set({status : !@.get('status')})
+
+	getName: ->
+		@.get('name')
+
+	getStatus: ->
+		@.get('status')

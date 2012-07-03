@@ -19,7 +19,7 @@ class RubyGarage.Views.Project extends Backbone.View
     'click .add_task button'      : 'addTask'
 
   appendTasks: (task) ->
-    view = new RubyGarage.Views.Task(model : task)
+    view = new RubyGarage.Views.Task({model : task, collection : @collection})
     @$('.tasks').append(view.render().el)
 
   edit: ->
