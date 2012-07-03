@@ -128,10 +128,12 @@ body {
 				.icon-chevron-up {
 					margin-top: -4px;
 					cursor: pointer;
+					display: block;
 				}
 				.icon-chevron-down {
 					margin-top: -10px;
 					cursor: pointer;
+					display: block;
 				}
 			}
 		}
@@ -188,6 +190,7 @@ body {
 		.task_input {
 			left: 0;
 			margin-left: 0;
+			width: 97%;
 		}
 
 	}
