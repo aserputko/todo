@@ -1,5 +1,6 @@
 <% if !_.isEmpty(@task): %>
 	<td class="span1"><input class="status" type="checkbox" <% if @task.status : %>checked> <% end %></td>
+	<td class="empty"></td>
 	<% if @task.edit:  %><td class="span7 <% if @task.status : %>done<% end %>"><input class="task_input span4" type="text" value="<%= @task.name %>"></td><% end %>
 	<% if !@task.edit: %><td class="span7 <% if @task.status : %>done<% end %>"><%= @task.name %></td><% end %>
 	<td class="span2">

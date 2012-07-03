@@ -195,6 +195,11 @@ body {
 	}
 
 	#todo_lists {
+
+		.empty {
+			width: 1px;
+		}
+
 		.row {
 			margin-top: 20px;
 		}
